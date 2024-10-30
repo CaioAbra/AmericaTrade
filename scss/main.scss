@@ -1,0 +1,19 @@
+// main.scss
+
+// Import base styles
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/global';
+
+// Import layout styles
+@import 'layout/header';
+@import 'layout/advantages';
+@import 'layout/how-to-operate';
+@import 'layout/chart';
+@import 'layout/faq';
+@import 'layout/footer';
+
+// Import components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/accordion';

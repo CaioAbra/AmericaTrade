@@ -1,0 +1,91 @@
+// _header.scss
+
+.header {
+    background: url('./../assets/images/hero-background.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+
+    .hero-text {
+        img {
+            max-width: 150px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: calc($spacing-unit / 2);
+
+            .highlight {
+                color: #0054FF; // Azul para o destaque
+            }
+        }
+
+        p {
+            color: #FFFFFF !important;
+            margin-top: $spacing-unit;
+            font-size: 1.1rem;
+            font-weight: 400;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .btn-primary {
+            background: $btn-primary-bg;
+            color: #fff;
+            border: none;
+            padding: $spacing-unit * 1.5 $spacing-unit * 3;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                margin-right: calc($spacing-unit / 2); // Espaço entre a seta e o texto
+                font-size: 1.2rem;
+            }
+
+            &:hover {
+                background: $btn-primary-hover-bg;
+            }
+        }
+    }
+
+    // .hero-image {
+    //     background: url('../images/laptop.png') right center no-repeat;
+    //     background-size: contain;
+    //     height: 100%; // Preenche a altura da coluna
+    // }
+
+    // Responsividade
+    @media (max-width: 768px) {
+        padding: 70px 0;
+        background-position: center top;
+
+        .hero-text {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-top: calc($spacing-unit / 2);
+            }
+
+            .btn-primary {
+                font-size: 1rem;
+                padding: $spacing-unit calc($spacing-unit * 2);
+            }
+        }
+
+        // .hero-image {
+        //     background-position: center;
+        //     height: 200px; // Ajuste de altura para dispositivos menores
+        // }
+    }
+}

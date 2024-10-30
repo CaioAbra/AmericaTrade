@@ -1,0 +1,15 @@
+// _buttons.scss
+
+.btn-primary {
+    background-color: $btn-primary-bg;
+    color: #fff;
+    padding: $spacing-unit $spacing-unit * 2;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $btn-primary-hover-bg;
+    }
+}
