@@ -1,0 +1,69 @@
+// _faq.scss
+
+.faq-section {
+    background-color: #000;
+    color: #fff;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #0074cc;
+    }
+
+    .faq {
+        .faq-item {
+            background-color: #0D0D0D;
+            border-radius: 8px;
+            margin-bottom: $spacing-unit;
+            overflow: hidden;
+
+            .faq-question {
+                width: 100%;
+                padding: $spacing-unit calc($spacing-unit * 1.5);
+                background-color: #0D0D0D;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: left;
+                border: none;
+                outline: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                .icon {
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover {
+                    background-color: lighten(#0D0D0D, 10%);
+                }
+            }
+
+            .faq-answer {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                padding: 0 $spacing-unit * 1.5;
+                background-color: #0D0D0D;
+
+                p {
+                    margin: $spacing-unit 0;
+                    color: lighten($text-color, 20%);
+                }
+            }
+
+            &.active .faq-answer {
+                max-height: 200px; // Ajuste para expandir a resposta
+            }
+
+            &.active .icon {
+                transform: rotate(180deg); // Rota a seta em 180° quando expandido
+            }
+        }
+    }
+}
