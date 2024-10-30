@@ -1,0 +1,79 @@
+// _how-to-operate.scss
+
+.how-to-operate {
+    background-color: #000;
+    color: #fff;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #0054FF; // Azul mais claro para o título
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: #FFFFFF; // Texto secundário em azul claro
+        margin-top: calc($spacing-unit / 2);
+    }
+
+    .step-card {
+        background-color: #0D0D0D;
+        border: 1px solid #0054FF; // Borda azul ao redor dos cards
+        border-radius: 8px;
+        padding: calc($spacing-unit * 2);
+        height: 320px; // Altura fixa para os cards
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // align-items: center;
+        // text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .icon-circle {
+            background-color: $btn-primary-bg;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: calc($spacing-unit * 1);
+
+            i {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+
+        h5 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: calc($spacing-unit / 2);
+        }
+
+        p {
+            color: #FFFFFF !important;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-top: calc($spacing-unit / 2);
+            font-weight: 400 !important;
+        }
+    }
+
+    // Responsividade
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+        }
+
+        .step-card {
+            padding: calc($spacing-unit * 1.5);
+            height: auto; // Remove altura fixa para dispositivos menores
+        }
+    }
+}

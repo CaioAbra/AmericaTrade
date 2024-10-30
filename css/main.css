@@ -178,6 +178,71 @@ h6 {
   }
 }
 
+.how-to-operate {
+  background-color: #000;
+  color: #fff;
+}
+.how-to-operate h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0054FF;
+}
+.how-to-operate .subtitle {
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+.how-to-operate .step-card {
+  background-color: #0D0D0D;
+  border: 1px solid #0054FF;
+  border-radius: 8px;
+  padding: 16px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.how-to-operate .step-card .icon-circle {
+  background-color: linear-gradient(93.03deg, #FF002C -9.71%, #7B0318 115.27%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.how-to-operate .step-card .icon-circle i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.how-to-operate .step-card h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.how-to-operate .step-card p {
+  color: #FFFFFF !important;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 4px;
+  font-weight: 400 !important;
+}
+@media (max-width: 768px) {
+  .how-to-operate h2 {
+    font-size: 1.5rem;
+  }
+  .how-to-operate .subtitle {
+    font-size: 0.9rem;
+  }
+  .how-to-operate .step-card {
+    padding: 12px;
+    height: auto;
+  }
+}
+
 .btn-primary {
   background-color: linear-gradient(93.03deg, #FF002C -9.71%, #7B0318 115.27%);
   color: #fff;
