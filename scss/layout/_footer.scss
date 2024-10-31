@@ -1,0 +1,56 @@
+// _footer.scss
+
+.footer {
+    background: #000; // Gradiente para o fundo do footer
+    background-image: url('./../assets/images/backgound-footer.png');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+
+    img {
+        max-width: 150px;
+    }
+
+    p {
+        color: lighten(#333, 40%);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    h5 {
+        color: #FFFFFF; // Azul para os títulos das colunas
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: $spacing-unit;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: calc($spacing-unit / 2);
+
+            a {
+                color: #FFFFFF;
+                font-size: 0.9rem;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #0074cc; // Azul para o hover
+                }
+            }
+        }
+    }
+
+    // Responsividade
+    @media (max-width: 768px) {
+        text-align: center;
+
+        img {
+            margin: 0 auto 20px;
+        }
+    }
+}

@@ -4,6 +4,12 @@ body {
     line-height: 1.6;
     color: $text-color;
     background-color: $background-color;
+    background: url('./../assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-size: cover;
+
+
 }
 
 a {
