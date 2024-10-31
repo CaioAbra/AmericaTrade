@@ -4,6 +4,20 @@
     // background: #000;
     color: #fff;
 
+    i.icon {
+        background: $btn-base-color !important;
+        border-radius: 4rem;
+        width: 69px;
+        height: 69px;
+        display: flex;
+        align-items: center;
+
+        .img-ico {
+            width: 30px;
+            margin: auto;
+        }
+    }
+
     h2 {
         font-size: 2rem;
         font-weight: bold;
@@ -22,11 +36,11 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         @media screen and (min-width:768px) {
-            min-height: 20rem;
+            min-height: 21rem;
         }
 
         @media screen and (min-width:1024px) {
-            min-height: 26rem;
+            min-height: 28rem;
         }
 
         i {
@@ -43,7 +57,7 @@
         }
 
         p {
-            color: lighten($text-color, 30%);
+            color: #FFFFFF !important;
             font-size: 0.95rem;
             line-height: 1.4;
         }

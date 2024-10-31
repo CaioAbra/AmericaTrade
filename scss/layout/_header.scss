@@ -6,6 +6,10 @@
     padding: 100px 0;
     color: #fff;
 
+    // Gradiente com mask-image
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+
     .hero-text {
         img {
             max-width: 150px;

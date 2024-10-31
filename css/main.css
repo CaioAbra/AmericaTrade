@@ -22,6 +22,8 @@ body {
   background: url("./../assets/images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 a {
@@ -47,6 +49,8 @@ h6 {
   background-size: cover;
   padding: 100px 0;
   color: #fff;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
 }
 .header .hero-text img {
   max-width: 150px;
@@ -109,6 +113,18 @@ h6 {
 .advantages {
   color: #fff;
 }
+.advantages i.icon {
+  background: #FF002C !important;
+  border-radius: 4rem;
+  width: 69px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+}
+.advantages i.icon .img-ico {
+  width: 30px;
+  margin: auto;
+}
 .advantages h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -126,12 +142,12 @@ h6 {
 }
 @media screen and (min-width: 768px) {
   .advantages .card-advantage {
-    min-height: 20rem;
+    min-height: 21rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .advantages .card-advantage {
-    min-height: 26rem;
+    min-height: 28rem;
   }
 }
 .advantages .card-advantage i {
@@ -146,7 +162,7 @@ h6 {
   margin-bottom: 4px;
 }
 .advantages .card-advantage p {
-  color: white;
+  color: #FFFFFF !important;
   font-size: 0.95rem;
   line-height: 1.4;
 }
@@ -205,18 +221,17 @@ h6 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .how-to-operate .step-card .icon-circle {
-  background-color: linear-gradient(93.03deg, #FF002C -9.71%, #7B0318 115.27%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  background: #FF002C !important;
+  border-radius: 4rem;
+  width: 69px;
+  height: 69px;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 8px;
 }
-.how-to-operate .step-card .icon-circle i {
-  color: #fff;
-  font-size: 1.5rem;
+.how-to-operate .step-card .icon-circle .img-ico {
+  width: 40px;
+  margin: auto;
 }
 .how-to-operate .step-card h5 {
   font-size: 1.1rem;
