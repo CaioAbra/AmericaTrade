@@ -1,19 +1,18 @@
 $(document).ready(function () {
     $(".faq-question").on("click", function () {
         const parent = $(this).closest(".faq-item");
+        const answer = parent.find(".faq-answer");
 
         // Fecha outros itens abertos
-        $(".faq-item").not(parent).removeClass("active").find(".faq-answer").css("max-height", "0");
+        $(".faq-item").not(parent).removeClass("active").find(".faq-answer").slideUp(300);
 
-        // Abre ou fecha o item atual
-        parent.toggleClass("active");
-
-        // Ajusta a altura da resposta para expandir ou colapsar
-        const answer = parent.find(".faq-answer");
+        // Abre ou fecha o item atual com animação suave
         if (parent.hasClass("active")) {
-            answer.css("max-height", answer.prop("scrollHeight") + "px");
+            parent.removeClass("active");
+            answer.slideUp(300);
         } else {
-            answer.css("max-height", "0");
+            parent.addClass("active");
+            answer.slideDown(300);
         }
     });
 });
